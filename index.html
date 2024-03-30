@@ -1,65 +1,51 @@
-<!-- login.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Index</title>
+
+    <!-- Link to your CSS files -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/navbar.css">
 
+
+    <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <nav class="navbar">
-        <a href=""> Nous X  </a>
+        <a href="index.html"> Nous X  </a>
         <a href=""> Home </a>
         <a href=""> Products </a>
         <a href=""> PC Builder </a>
         <div class="spacer"></div>
         <div class="nav-links">
-            <a href="" class="signup"> Sign up </a>
+            <a href="sign-up.html" class="signup"> Sign up </a>
             <div class="divider"></div>
-            <a href="" class="login"> Login </a>
+            <a href="login.html" class="login"> Login </a>
         </div>
     </nav>
 
+    <div class="video-bg-container">
 
-    <video id="video-bg" autoplay loop muted>
-        <source src="res/video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+        <video id="video-bg" autoplay loop muted>
+          <source src="res/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+          
+        <div class="transparent-bg"> </div>
+        <div class="black-bg"> </div>
+        <div class="blur"> </div>
 
-
-    <div class="main-container">
-        <div class="component-container">
-
-            <h1 class="lbl-title"> NOUS X LOGIN </h1>
-
-            <div class="email-container"> 
-                <input class="textbox-em" type="email" placeholder="Email" required> <br>
-            </div>
-
-            <div class="password-container">
-                <input class="textbox-pw" id="password" type="password" placeholder="Password" required>
-                <img src="./res/hide.png" id="eyeicon" width="30px">
-            </div>
-           
-            <p class="lbl-forgot"> <a href="recovery-pw.html">Forgot password?</a> </p>
-            <button class="btn-login"> LOG IN </button>
-            <p class="lbl-signup"> <a href="sign-up.html"> Don't have an account yet? </a> </p>
-
-        </div>
     </div>
-    
-    <script> 
+
+     <script> 
      let eyeicon = document.getElementById("eyeicon");
      let password = document.getElementById("password");
 

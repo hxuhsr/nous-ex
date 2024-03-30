@@ -10,15 +10,16 @@
     background-color: #fff;
     padding: 20px 20px 20px 0; /* Add padding to the right side */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: +5;
 }
 
 .navbar a {
     position: relative;
     text-decoration: none;
     color: black;
-    font-size: 20px; /* Use fixed value in pixels */
+    font-size: 20px;
     letter-spacing: 0.5px;
-    padding: 0 40px; /* Use fixed value in pixels */
+    padding: 0 40px;
     font-family: 'Oswald';
     font-weight: bold;
 }
@@ -28,7 +29,7 @@
     position: absolute;
     color: #ffffff;
     background-color: black;
-    height: 4px; /* Use fixed value in pixels */
+    height: 4px; 
     width: 0;
     left: 0;
     bottom: -10px;
@@ -43,37 +44,8 @@
     width: 100%;
 }
 
-/* Small screens */
-@media (max-width: 576px) {
-    .navbar {
-        /* Adjust navbar styles for small screens */
-    }
-}
-
-/* Medium screens */
-@media (min-width: 577px) and (max-width: 768px) {
-    .navbar {
-        /* Adjust navbar styles for medium screens */
-    }
-}
-
-/* Large screens */
-@media (min-width: 769px) and (max-width: 992px) {
-    .navbar {
-        /* Adjust navbar styles for large screens */
-    }
-}
-
-/* Very large screens */
-@media (min-width: 993px) {
-    .navbar {
-        /* Adjust navbar styles for very large screens */
-    }
-}
-
-
 .spacer {
-    flex: 1; /* Take up remaining space */
+    flex: 1; 
 }
 
 .nav-links {
@@ -83,16 +55,16 @@
 
 .divider {
     width: 1px;
-    height: 20px; /* Adjust the height of the divider */
-    background-color: #ccc; /* Use a color for the divider */
-    margin: 0; /* Add some spacing around the divider */
+    height: 20px; 
+    background-color: #ccc;
+    margin: 0; 
 }
 
 .signup {
-    margin-right: 5px; /* Add a small margin to the right of the "Sign up" link */
+    margin-right: 5px;
 }
 
 .signup,
 .login {
-    margin-left: 5px; /* Add a small margin to the left of the "Login" link */
+    margin-left: 5px;
 }
