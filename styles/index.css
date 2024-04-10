@@ -42,15 +42,15 @@ a {
 
 .transparent-bg {
     height: 84vh; 
-    width: 92vw; 
+    width: 94vw; 
     padding: 30px;
     padding-top: -10px;
     position: absolute;
-    top: 55%; 
+    top: 54%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 18px;
+    border-radius:12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -70,6 +70,21 @@ a {
     
 }
 
-#cart {
-    padding-top:4px;
+
+.cart-container {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+

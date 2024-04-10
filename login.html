@@ -19,18 +19,25 @@
 <body>
 
     <nav class="navbar">
-        <a href="index.html"> Nous X  </a>
-        <a href=""> Home </a>
-        <a href=""> Products </a>
-        <a href=""> PC Builder </a>
+        <div class="logo-container"> 
+            <a href="index.html"> <img src="styles/res/logo.png" id="logo" width="100px"></a>
+        </div>
+        <div class="divider"></div>
+        <a href="">Home</a>
+        <div class="divider"></div>
+        <a href="">Products</a>
+        <div class="divider"></div>
+        <a href="pc-builder.html">PC Builder</a>
+        <div class="divider"></div>
         <div class="spacer"></div>
         <div class="nav-links">
-            <a href="sign-up.html" class="signup"> Sign up </a>
+            <a href="sign-up.html" class="signup">Sign up</a>
             <div class="divider"></div>
-            <a href="login.html" class="login"> Login </a>
+            <a href="login.html" class="login">Login</a>
         </div>
+        <div class="divider"></div>
     </nav>
-
+  
 
     <video id="video-bg" autoplay loop muted>
         <source src="styles/res/video1.mp4" type="video/mp4">
@@ -44,12 +51,21 @@
             <h1 class="lbl-title"> NOUS X LOGIN </h1>
 
             <div class="email-container"> 
-                <input class="textbox-em" type="email" placeholder="Email" required> <br>
+                <input class="textbox-em" 
+                type="email" 
+                placeholder="Email" 
+                required> 
+                <br>
             </div>
 
             <div class="password-container">
-                <input class="textbox-pw" id="password" type="password" placeholder="Password" required>
+                <input class="textbox-pw"
+                id="password" type="password"
+                placeholder="Password"
+                required>
+
                 <img src="/styles/res/view.png" id="eyeicon" width="25px">
+                
             </div>
            
             <p class="lbl-forgot"> <a href="recovery-pw.html">Forgot password?</a> </p>
