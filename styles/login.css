@@ -29,6 +29,7 @@ a {
     background-color: white;
     padding: 5vh;
     box-sizing: border-box;
+    border-radius: 12px;
 }
 
 .lbl-title {
@@ -167,6 +168,10 @@ a {
 .btn-login:active {
     color: #000;
     font-weight: bold;
+}
+
+#eyeicon {
+    padding-top: 2px;
 }
 
 @media (max-width: 768px) {

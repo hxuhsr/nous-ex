@@ -1,10 +1,12 @@
 body {
+    background-color: black;
     display: flex;
     flex-direction: column;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     height: 200vh; 
     overflow-x: hidden; 
+    
 }
 a {
     text-decoration: none; 
@@ -15,20 +17,6 @@ a {
     flex-direction: column;
     min-height: 100vh;
     position: relative; 
-}
-
-
-.video-bg-container {
-    background-color: black;
-    height: 100vh;
-    width: 100%;
-    align-items: center; 
-}
-
-#video-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
 }
 
 .blur {
@@ -43,23 +31,45 @@ a {
     filter: blur(20px); 
 }
     
-
-.black-bg {
-    background-color: black;
-    height: 90vh;
+.transparent-bg-container {
+    background-color: transparent   ;
+    height: 120vh;
     width: 100%;
-    margin-top:-4px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 0; 
 }
 
 .transparent-bg {
-    background-color: white;
-    height: 79vh; 
+    height: 84vh; 
     width: 92vw; 
     padding: 30px;
-    opacity: 0.4;
+    padding-top: -10px;
     position: absolute;
-   
-    top: 54%; 
+    top: 55%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 1; 
+}
+
+.wave-container {
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: pink;
+    margin-top: 200px;
+    width: 100%;
+    top: 90%; 
+    z-index: -10;
+    
+}
+
+#cart {
+    padding-top:4px;
 }

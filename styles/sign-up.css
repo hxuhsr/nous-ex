@@ -29,6 +29,7 @@ a {
     background-color: white;
     padding: 5vh;
     box-sizing: border-box;
+    border-radius: 12px;
 }
 .lbl-title {
     font-family: 'Oswald';
@@ -152,4 +153,8 @@ a {
   .btn-signup:active {
       color: #000;
       font-weight: bold;
+  }
+
+  #eyeicon  {
+    padding-top:2px;
   }
